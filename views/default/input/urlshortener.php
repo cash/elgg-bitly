@@ -20,7 +20,7 @@ echo '<div class="mam bitly-wrapper">';
 echo elgg_view('output/url', array(
 	'href' => '#bitly-form',
 	'text' => elgg_echo('bitly:shorten:label'),
-	'class' => 'elgg-toggler',
+	'rel' => 'toggle',
 ));
 
 echo elgg_view_image_block('', $text_input, array(
