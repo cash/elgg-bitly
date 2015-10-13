@@ -7,7 +7,6 @@ define(['require', 'jquery', 'elgg'], function(require, $, elgg) {
         var url = encodeURI($("#bitly-url").val());
         var username = $('#bitly-url').attr('data-username');
         var api_key = $('#bitly-url').attr('data-apikey');
-        console.log(url); console.log(username); console.log(api_key);
         
         $.ajax({
             url: "https://api-ssl.bitly.com/v3/shorten",
