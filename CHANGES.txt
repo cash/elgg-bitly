@@ -1,0 +1,7 @@
+== Version History ==
+
+x.x:
+
+1.1 (10/12/2015):
+ - upgrade for Elgg 1.9+ (AMD js)
+ - use ssl api endpoint

@@ -9,7 +9,7 @@
 elgg_register_event_handler('init', 'system', 'bitly_init');
 
 function bitly_init() {
-	elgg_register_js('urlshortener', 'js/bitly/shortener.js', 'footer');
+	//elgg_register_js('urlshortener', 'js/bitly/shortener.js', 'footer');
 
-	elgg_extend_view('css/elgg', 'bitly/css');
+	elgg_extend_view('css/elgg', 'css/bitly');
 }

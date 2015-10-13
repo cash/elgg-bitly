@@ -3,11 +3,13 @@
  * Display the URL shortener input box
  */
 
-elgg_load_js('urlshortener');
+elgg_require_js('bitly/shortener');
 
 $text_input = elgg_view('input/text', array(
 	'name' => 'bitly_url',
 	'id' => 'bitly-url',
+	'data-username' => elgg_get_plugin_setting('username', 'bitly'),
+	'data-apikey' => elgg_get_plugin_setting('api_key', 'bitly')
 ));
 
 $button = elgg_view('input/submit', array(
